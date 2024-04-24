@@ -1,4 +1,4 @@
-# Projeckt in TDT4100 - Programvareutvikling
+# Project in TDT4100 - Programvareutvikling
 
 ## Description of BrytIsen:
 
@@ -19,10 +19,10 @@ The service will provide an overview of icebreaker activities, where users can s
 
 ## To preview the backend:  
 `cd backend`  
-### Windows:
-`.\mvnw spring-boot:run`
-### MacOS/Linux:
-`./mvnw spring-boot:run`
+
+## To run the spring boot API: 
+`mvn clean install -DskipTests` 
+`mvn spring-boot:run`
 
 Open browser to www.localhost:8080
 
