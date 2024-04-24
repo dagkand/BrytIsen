@@ -21,7 +21,7 @@ The service will provide an overview of icebreaker activities, where users can s
 `cd backend`  
 
 ## To run the spring boot API: 
-`mvn clean install -DskipTests` 
+`mvn clean install -DskipTests` \\
 `mvn spring-boot:run`
 
 Open browser to www.localhost:8080
