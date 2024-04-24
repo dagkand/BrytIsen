@@ -1,0 +1,14 @@
+.star-rating {
+    display: flex; /* Arrange stars horizontally */
+    cursor: pointer; /* Indicate clickable stars */
+  }
+  
+  .star {
+    font-size: 24px; /* Adjust star size as needed */
+    margin: 0 5px; /* Add spacing between stars */
+    color: #ccc; /* Default color for unfilled stars */
+  }
+  
+  .star.filled {
+    color: gold; /* Color for filled stars */
+  }

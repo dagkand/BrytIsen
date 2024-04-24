@@ -1,0 +1,62 @@
+.filter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 60%;
+}
+
+.filter-section.categories {
+  flex-direction: column;
+}
+
+.filter-section.categories label,
+.filter-section.categories div {
+  margin: 5px 0;
+}
+
+.category {
+  background-color: rgb(133, 161, 176);
+  border: 3px solid rgb(133, 161, 176);
+  height: 28px;
+  min-width: 121px;
+  text-align: center;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.category:hover {
+  background-color: rgb(98, 131, 149);
+  border-color: rgb(98, 131, 149);
+}
+
+.category input {
+  display: none;
+}
+
+.category.isActive {
+  background-color: rgb(133, 161, 176);
+  border-color: rgb(98, 131, 149);
+}
+
+.category.isActive label::before {
+  content: "✔";
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.category label {
+  cursor: pointer;
+}
+
+.apply-filter-button {
+  margin-bottom: 1rem;
+}

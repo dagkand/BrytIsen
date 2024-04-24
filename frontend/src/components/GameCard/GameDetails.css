@@ -1,0 +1,134 @@
+.return-text {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  font-size: x-large;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+}
+
+.players p,
+.vurderinger p {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  font-size: large;
+}
+
+.reports p {
+  display: flex;
+  font-size: large;
+  align-items: center;
+}
+
+.loading {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 50px;
+}
+.lt-spilleliste-kapp {
+  display: block;
+  position: relative;
+  border: solid 3px white;
+  border-radius: 22px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.game-dropdown-menu {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  top: 130%;
+  left: 0;
+  background-color: white;
+  border-radius: 12px;
+  z-index: 10;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.game-dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 20%;
+  transform: translateX(-50%);
+  border: 10px solid transparent;
+  border-bottom-color: white;
+}
+
+.game-dropdown-item {
+  width: 100;
+  text-align: center;
+  text-overflow: ellipsis;
+}
+
+.game-dropdown-item:hover {
+  text-decoration: solid 2px underline;
+  cursor: pointer;
+}
+
+.game-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+
+.game-header h2 {
+  font-size: xx-large;
+  margin: 0;
+}
+
+.game-header-emoji {
+  font-size: 5.5rem;
+  text-shadow: 2px 2px 2px rgba(66, 66, 66, 0.5);
+  min-width: 200px;
+  height: 160px;
+  background: linear-gradient(
+    180deg,
+    rgb(191, 231, 254) 0%,
+    rgb(135, 161, 226) 100%
+  );
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subheader-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 1.5rem;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+}
+.timer > span {
+  font-weight: bold;
+}
+
+.description {
+  white-space: pre-line;
+}
+
+@media (min-width: 768px) {
+  .game-header {
+    flex-direction: row;
+  }
+  .subheader-row {
+    justify-content: space-between;
+  }
+}

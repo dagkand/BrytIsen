@@ -1,0 +1,59 @@
+.games-card {
+  width: 200px;
+  height: 160px;
+  background: linear-gradient(
+    180deg,
+    rgb(191, 231, 254) 0%,
+    rgb(135, 161, 226) 100%
+  );
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-overflow: ellipsis;
+  position: relative;
+}
+
+.game-card-emoji {
+  text-shadow: 2px 2px 2px rgba(66, 66, 66, 0.5); 
+}
+
+.games-card:hover {
+  background: linear-gradient(
+    180deg,
+    rgb(191, 231, 254) 0%,
+    rgb(122, 168, 228) 100%
+  );
+  cursor: pointer;
+}
+
+.games-card > h3 {
+  margin-bottom: 5px;
+  margin-top: 8px;
+  overflow: hidden;    /* Hide overflow */
+  text-overflow: ellipsis;
+  max-width: 90%;
+}
+
+.games-card .tooltip {
+  position: absolute;
+  visibility: hidden;
+  font-size: smaller;
+  transform: translateY(-190%);
+}
+
+.games-card:hover .tooltip {
+  visibility: visible;
+}
+
+.games-card .star-rating {
+  top: 1rem;
+  left: 1rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  font-size: medium;
+}

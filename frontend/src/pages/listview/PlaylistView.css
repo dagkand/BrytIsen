@@ -1,0 +1,7 @@
+.playlist-view {
+    margin-top: 20px; /* Add margin to the top of the PlaylistView */
+}
+
+.game-items-container {
+    margin-top: 20px; /* Add margin between PlaylistHeader and FavoriteInList items */
+}

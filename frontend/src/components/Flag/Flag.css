@@ -1,0 +1,26 @@
+.flag {
+    display: flex;
+    align-items: center;
+    background-color: #ff4500;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+
+.flag-icon {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    stroke: #FF4500;
+    padding: 4px;
+    margin: 4px;
+  }
+
+  .flag-text {
+    font-weight: bold;
+  }
+
+

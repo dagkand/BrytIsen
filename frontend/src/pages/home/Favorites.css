@@ -1,0 +1,61 @@
+.favorite-lists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.add-playlist-button {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-container input {
+  max-width: 200px;
+  margin-bottom: 3px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.button-container {
+  display: flex;
+  margin-top: 3px;
+}
+
+.ok-button,
+.cancel-button {
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.ok-button {
+  background-color: rgb(76, 169, 215);
+}
+
+.cancel-button {
+  background-color: rgb(146, 152, 155);
+}
+
+.ok-button:hover {
+  background-color: rgb(45, 127, 168);
+
+}
+
+.cancel-button:hover {
+  background-color: rgb(126, 134, 138);
+}

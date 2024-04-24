@@ -1,0 +1,189 @@
+.return_link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: fit-content;
+  margin-left: 2rem;
+}
+
+.create_game_form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  margin: 0 2rem;
+}
+
+.create_game_form > label {
+  margin: 1rem 0 0.3rem 0;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.categories > div {
+  margin: 0 1rem 0 0;
+}
+
+.input_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: fit-content;
+}
+
+.input_row > input {
+  margin: 0 10px 0 0;
+}
+
+.emoji_picker {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#emoji {
+  font-size: xx-large;
+  margin: 0 1rem 0 0;
+}
+
+.create_game_form > input {
+  padding: 0.3rem;
+  min-width: 40px;
+}
+
+input {
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+.input-field {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    width: 50%;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color: #7b7a8a;
+    color: white;
+}
+
+.emoji-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+}
+
+.submit-button {
+  width: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-field {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 95%;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: #7b7a8a;
+  color: white;
+}
+
+.input-field::placeholder {
+  color: white;
+}
+
+.text-field::placeholder {
+  color: white;
+}
+
+.create_game_form > textarea {
+  min-height: 8rem;
+}
+
+#create_button {
+  margin: 2rem auto 0 auto;
+  width: 200px;
+}
+
+.checkbox_item {
+  background-color: rgb(133, 161, 176);
+  border: 3px solid rgb(133, 161, 176);
+  height: 28px;
+  min-width: 48px;
+  text-align: center;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.checkbox_item.isActive {
+  background-color: rgb(133, 161, 176);
+  border-color: rgb(98, 131, 149);
+}
+
+.checkbox_item:hover {
+  background-color: rgb(98, 131, 149);
+  border-color: rgb(98, 131, 149);
+}
+
+.checkbox_item input {
+  display: none;
+}
+
+.checkbox_item label {
+  cursor: pointer;
+}
+
+.checkbox_item.isActive label::before {
+  content: "✔";
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.categories {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.error {
+  color: red;
+  margin: 0.1rem 0 0 0;
+  font-size: smaller;
+  background-color: #5a587486;
+  width: fit-content;
+  padding: 0.2rem 0.5rem;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .create_game_form {
+    margin: 0 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .create_game_form {
+    max-width: 60%;
+    margin: auto;
+  }
+}
